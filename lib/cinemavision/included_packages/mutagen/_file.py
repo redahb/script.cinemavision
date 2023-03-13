@@ -9,6 +9,7 @@ import warnings
 
 from mutagen._util import DictMixin, loadfile
 
+# Quick CinemaVision exception fix START
 _fileopener = [open]
 
 
@@ -18,6 +19,7 @@ def setFileOpener(opener):
 
 def FileOpener(*args, **kwargs):
     return _fileopener[0](*args, **kwargs)
+# Quick CinemaVision exception fix END
 
 
 class FileType(DictMixin):

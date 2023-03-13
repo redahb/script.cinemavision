@@ -18,14 +18,16 @@ depending on tag or format. They may also be entirely different objects
 for certain keys, again depending on format.
 """
 
+# Quick CinemaVision exception fix START
 from mutagen._file import setFileOpener
 from mutagen._file import FileOpener
 
 from mutagen._util import MutagenError
 from mutagen._file import FileType, StreamInfo, File
 from mutagen._tags import Tags, Metadata, PaddingInfo
+# Quick CinemaVision exception fix END
 
-version = (1, 45, 2)
+version = (1, 46, 1)
 """Version tuple."""
 
 version_string = ".".join(map(str, version))
@@ -44,7 +46,3 @@ Tags
 Metadata
 
 PaddingInfo
-
-setFileOpener
-
-FileOpener
